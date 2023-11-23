@@ -17,7 +17,7 @@
  const title2 = document.createElement("h2")
  title2.textContent = "Available Freelancers"
  body.append(title2)
-//
+ 
  const h3 = document.getElementsByTagName("h3")
  const title3 = document.createElement("h3")
  title3.textContent = "Name Occupation Starting Price"
@@ -45,12 +45,8 @@
   
     freelancersDiv.appendChild(freelancerElement);
   
+
     totalStartingPrice += startingPrice;
-    currentIndex++;
-  
-    if (currentIndex === freelancers.length) {
-      currentIndex = 0;
-    }
     calculateAverage();
   }
   const mytable = document.getElementsByTagName("myTable")
@@ -62,14 +58,6 @@
   setTimeout(() => {
     addFreelancer('Carol', 'Programmer', 70);
   }, 3000);
-  
- 
-   
-
-  
-  // You can continue adding more simulated freelancers using setTimeout
-  
-  // Call the function to add freelancer names at the bottom
   
  
 
